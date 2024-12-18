@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: mongodb-cluster1.32eg7.mongodb.net
-      MONGODB_USERNAME: 1ms19mca28
-      MONGODB_PASSWORD: uhRs11pp8t9ikTBj
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
